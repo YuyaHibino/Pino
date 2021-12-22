@@ -15,10 +15,10 @@
                     <a href='/posts/{{ $post-> id}}'><h2 class='title'>{{ $post->title }}</h2></a>
                     <p class='body'>{{ $post->body }}</p>
                 </div>
+                 <a href="">{{ $post->category->name }}</a>
             @endforeach
         </div>
         <div class='paginate'>
-            {{ $posts->links() }} 
         </div>
     </body>
 </html>
